@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo " Ubuntu Shadowsocks Install Shell"
+echo " Centos Shadowsocks Install Shell"
 echo " Ver 1.0"
 
 echo ""

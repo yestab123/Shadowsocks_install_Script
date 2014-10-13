@@ -1,0 +1,3 @@
+rpm -Uvh http://poptop.sourceforge.net/yum/stable/rhel6/pptp-release-current.noarch.rpm
+// 加入源到rpm
+yum install pptpd

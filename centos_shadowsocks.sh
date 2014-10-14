@@ -37,6 +37,9 @@ echo "$super" > /etc/supervisor/conf.d/shadowsocks.conf
 echo "Setting ulimit now..."
 echo "ulimit -n 512000" >> /etc/default/supervisor
 
+echo "Setting iptables..."
+iptables -A INPUT -p tcp -m state --state NEW -m tcp --dport 12888 -j ACCEPT 
+service iptables save
 
 echo "Install Finish"
 echo "Now starting service..."
